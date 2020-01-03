@@ -10,5 +10,6 @@ def loadJson() {
     def config_object = jsonSlurper.parseText(config_text)
     echo "${config_object}"
     echo "${config_object.config.minio}"
+    echo "${config_object.config.minio.name}"
 
 }
